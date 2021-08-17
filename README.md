@@ -9,7 +9,7 @@
   	<img align="center" src="https://img.shields.io/github/stars/s1l3nt78/sifter">		  
 <br>
 	<img align="center" src="https://img.shields.io/badge/@Codename:-Sapphire-violet"><br />
-	<img align="center" src="https://img.shields.io/badge/Version-12.2-red">
+	<img align="center" src="https://img.shields.io/badge/Version-12.3-red">
 <!--	<img align="center" src="https://img.shields.io/badge/Revision--green">
 --></p>
 
@@ -85,7 +85,8 @@
 # Updates:
 ## Additions:
 <details>
-	<summary><strong>#__ Version: 12.2 _|_ Sapphire __# </strong></summary><br />
+	<summary><strong>#__ Version: 12.3 _|_ Sapphire __# </strong></summary><br />
+- <strong>Blacknet</strong> - Allows you to search for .onion sites by keywords.<br />
 - <strong>Emagnet</strong> - Capture email addresses and passwords from leaked databases uploaded on pastebin.<br />
 - <strong>hahwul | Phoenix</strong> - hahwul's webtools<br />
 - <strong>ScriptHunter</strong> - Hunter JavaScript within websites<br />
@@ -359,6 +360,7 @@ use a regular user and give permissions only when needed.</em></strong>
 <strong>#Website Scanners & Enumerators</strong></summary>
 - <a href="https://github.com/sullo/nikto">Nikto</a><br />
 - <a href="https://github.com/1N3/blackwidow">Blackwidow</a><br />
+- <a href="https://github.com/blvckteam/blacknet">Blacknet</a><br />
 - <a href="#">Wordpress</a><br />
 &emsp;&emsp;--- <a href="https://github.com/wpscanteam/wpscan">WPScan</a><br />
 &emsp;&emsp;--- <a href="https://github.com/n00py/WPForce">WPForce/Yertle</a><br />

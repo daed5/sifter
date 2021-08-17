@@ -518,11 +518,11 @@ web_mods(){
     ASTAT=$(cat /home/$USER/.config/.anon_status)
 	echo -e "${EXC} ${BIGreen}Anonymous: ${BIYellow}${ASTAT}${NC}"
 	echo -e " ${W}==================================================\n ${ORNG}Which tool would you like to use?\n ${W}==================================================${NC}"
-	echo -e "\n ${ORNG}1.${W} Dirb                 ${ORNG}5.${W} DorksEye ${NC}"
-	echo -e " ${ORNG}2.${W} Nikto 		 ${ORNG}6.${W} Katana-DS ${NC}"
-	echo -e " ${ORNG}3.${W} BlackWidow           ${ORNG}7.${W} Zeus ${NC}"
-	echo -e " ${ORNG}4.${W} WordPress Tools      ${ORNG}8.${W} Back ${NC}"
-    echo -e " ${W}"
+	echo -e "\n ${ORNG}1.${W} Dirb                 ${ORNG}6.${W} Katana-DS ${NC}"
+	echo -e " ${ORNG}2.${W} Nikto 		 ${ORNG}7.${W} Zeus ${NC}"
+	echo -e " ${ORNG}3.${W} BlackWidow           ${ORNG}8.${W} Blacknet ${NC}"
+	echo -e " ${ORNG}4.${W} WordPress Tools      ${ORNG}9.${W} Back ${NC}"
+    echo -e " ${ORNG}5.${W} DorksEye ${W}"
     echo -n " =============================#?: "
 	read WEM
 	if [[ ${WEM} == "1" ]]; then
@@ -543,6 +543,8 @@ web_mods(){
 	elif [[ ${WEM} == "7" ]]; then
 		bash /opt/sifter/modules/webmods/zeus.sh
 	elif [[ ${WEM} == "8" ]]; then
+		bach /opt/sifter/modules/webmods/blacknet.sh
+	elif [[ ${WEM} == "9" ]]; then
 		modules
 	elif [[ ${WEM} == "cd "* ]]; then
 		DCK=$(pwd)
@@ -2006,10 +2008,10 @@ update(){
     echo -e "/  \`|_  _  _.;_/*._  _   |, _ ._.  |  |._  _| _.-+- _  __   "
     echo -e "\__.[ )(/,(_.| \|[ )(_]  | (_)[    |__|[_)(_](_] | (/,_)  *  * "
     echo -e "                    ._|                |                       ${NC}"
-    echo -e "${YLW}##########################"                                             ########################
-    echo -e "${YLW}# ${ORNG}Current Version  :${LP} 12  ${YLW}#${NC}"                          ##    VERSION INFO    ##
+    echo -e "${YLW}############################"                                             ########################
+    echo -e "${YLW}# ${ORNG}Current Version  :${LP} 12.3  ${YLW}#${NC}"                          ##    VERSION INFO    ##
   #echo -e "${YLW}# ${ORNG}Incoming Revision : ${LP}r3  ${YLW}#"                                       ##    UPDATE CHECK    ##
-    echo -e "${YLW}##########################${NC}"                                         ########################
+    echo -e "${YLW}############################${NC}"                                         ########################
 
     if [[ -f '/opt/sifter/modules/exmods/fuzzydander.sh' ]]; then
     	    sudo mv /opt/sifter/modules/exmods/fuzzydander.sh /opt/sifter/modules/exmods/fuzzyd.sh

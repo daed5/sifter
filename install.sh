@@ -2002,6 +2002,29 @@ t84(){
 		sudo chown $USER:$USER -R Emagnet
 	fi
 }
+
+#################
+# 85 # Blacknet #
+#################
+t85(){
+	echo -e "${W}===========================================================================================${NC}"
+	echo -e "${YLW}Checking for Blacknet ${NC}"
+	if [[ -d '/opt/blacknet' ]]; then
+		echo -e "${ORNG}"
+		figlet -f mini "Blacknet is already installed"
+		echo -e "${NC}"
+		cd /opt/blacknet
+		sudo git fetch; sudo git pull
+	else
+		cd /opt
+		sudo git clone https://github.com/blvckteam/blacknet
+		sudo chown $USER:$USER -R blacket
+		cd blacknet
+		sudo python3 -m venv env
+		sudo ./env/bin/python3 -m pip install setuptools wheel
+		sudo ./env/bin/python3 -m pip install -r requirements.txt
+	fi
+}
 #######################################################################################################################################
 ####################
 # Ext # Plugin Installation #
@@ -2172,6 +2195,6 @@ echo -e "${RED}=================================================================
 ######################               VGhlIERlYWQgQnVubnkgQ2x1Yg==             ########################
 ######################################################################################################
 echo -e "${YLW}############################"                                             ########################
-echo -e "${YLW}# ${ORNG}Incoming Version  :${LP} 11.7 ${YLW}#${NC}"                          ##    VERSION INFO    ##
+echo -e "${YLW}# ${ORNG}Incoming Version  :${LP} 12.3 ${YLW}#${NC}"                          ##    VERSION INFO    ##
 #echo -e "${YLW}# ${ORNG}Incoming Revision : ${LP}r3 ${YLW}#"                                       ##    UPDATE CHECK    ##
 echo -e "${YLW}############################${NC}"                                         ########################
